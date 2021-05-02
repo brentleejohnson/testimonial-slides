@@ -23,71 +23,74 @@
   </head>
   <body>
     <!-- Set up your HTML -->
-    <div class="owl-carousel">
+    <div class="owl-carousel owl-theme">
       <div class="container">
         <img
           src="./images/testimonials/brian-mcgowan-857R--_CvP0-unsplash.jpg"
           alt="buzzie"
+          style="width: 300px"
         />
         <div class="text">
           <h1>Keenan Majiet</h1>
           <h2>Shoe Model</h2>
-          <q>
+          <p>
             The next titanic should be tested with only albinos, so if it sinks,
             no harm is done
-          </q>
+          </p>
         </div>
       </div>
       <div class="container">
         <img
           src="./images/testimonials/erik-mclean-yan_kDfdttA-unsplash.jpg"
           alt="erik"
+          style="width: 300px"
         />
         <div class="text">
           <h1>Jeneal Mentor</h1>
           <h2>Chief Executive Officer</h2>
-          <q>
+          <p>
             Wake up to reality. Nothing ever goes as planned in this accursed
             world. Wherever there is light, there are always shadows. As long as
             there is a concept of victory, the vanquished will also exist. The
             selfish desire for peace give rise to war. And hatred is born in
             order to protect love.
-          </q>
+          </p>
         </div>
       </div>
       <div class="container">
         <img
           src="./images/testimonials/ivan-diaz-j0D2YkhaoN4-unsplash.jpg"
           alt=""
+          style="width: 300px"
         />
         <div class="text">
           <h1>Naeemah Davis</h1>
           <h2>Software Developer</h2>
-          <q>
-            Don't lose yourself to gain the world, everything is temporary
-          </q>
+          <p>Don't lose yourself to gain the world, everything is temporary</p>
         </div>
       </div>
       <div class="container">
         <img
           src="./images/testimonials/lukas-denier-YiXsjwJKXmo-unsplash.jpg"
           alt=""
+          style="width: 300px"
         />
         <div class="text">
           <h1>Cailah Sedeman</h1>
           <h2>Screen Writer</h2>
-          <q> The new Mortal Kombat was a waste </q>
+          <p>The new Mortal Kombat was a waste</p>
         </div>
       </div>
       <div class="container">
         <img
           src="./images/testimonials/michael-marais-1VV1MRafd7A-unsplash.jpg"
           alt=""
+          style="width: 300px"
         />
         <div class="text">
           <h1>Ronald Terblanche</h1>
           <h2>Data Analyst</h2>
-          <q> Rum roll raggy </q>
+          <p>Rum roll raggy</p>
         </div>
       </div>
     </div>
@@ -108,8 +111,20 @@
           items: 1,
           margin: 50,
           loop: true,
-          stagePadding: 100,
           dots: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            900: {
+              items: 1,
+              stagePadding: 0,
+            },
+            1000: {
+              items: 1,
+              stagePadding: 70,
+            },
+          },
           // autoplay: true,
         });
       });
